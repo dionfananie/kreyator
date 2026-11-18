@@ -1,9 +1,13 @@
 {
 	"$schema": "./node_modules/wrangler/config-schema.json",
 	"name": "kreyator",
-	"main": "./workers/app.ts",
+	"main": "./build/server/static/js/app.js",
 	"compatibility_date": "2025-10-08",
 	"compatibility_flags": ["nodejs_compat"],
+	"workers_dev": true,
+	"assets": {
+		"directory": "./build/client/"
+	},
 	"observability": {
 		"enabled": true
 	},
